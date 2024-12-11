@@ -1,5 +1,7 @@
 import React from 'react'
 import Hero from '../components/Hero'
+import EventList from '../components/EventList';
+import Offer from '../components/Offer';
 
 function Home() {
   const images = [
@@ -10,6 +12,8 @@ function Home() {
   return (
     <div>
       <Hero images={images}/>
+      <EventList/>
+      <Offer/>
     </div>
   )
 }
