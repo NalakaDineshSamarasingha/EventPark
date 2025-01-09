@@ -2,6 +2,9 @@ import React from 'react'
 import Hero from '../components/Hero'
 import EventList from '../components/EventList';
 import Offer from '../components/Offer';
+import Promotion from '../components/Promotion';
+import Chill from '../components/Chill';
+import Footer from '../components/Footer';
 
 function Home() {
   const images = [
@@ -14,6 +17,8 @@ function Home() {
       <Hero images={images}/>
       <EventList/>
       <Offer/>
+      <Promotion/>
+      <Chill/>
     </div>
   )
 }

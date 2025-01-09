@@ -24,7 +24,7 @@ export default function Hero({ images }) {
     };
 
     return (
-        <div className="relative w-full h-[100vh] overflow-hidden ">
+        <div className="relative w-full h-[85vh] mt-[15vh] overflow-hidden pt-[10vh] ">
             {images.map((image, index) => (
                 <div
                     key={index}

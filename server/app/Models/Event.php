@@ -2,19 +2,25 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Event extends Model
 {
-    use HasFactory;
+    protected $fillable = ['event_name', 'place', 'event_date', 'event_time', 'event_type_id','image'];
 
-    // Define which attributes are mass assignable
-    protected $fillable = [
-        'name',
-        'description',
-        'start_time',
-        'end_time',
-        'location',
-    ];
+    public function eventType()
+    {
+        return $this->belongsTo(EventType::class);
+    }
+
+    public function tickets()
+    {
+        return $this->hasMany(Ticket::class);
+    }
+    public function artists()
+    {
+        return $this->belongsToMany(Artist::class, 'event_artist', 'event_id', 'artist_id')
+                    ->withTimestamps(); // Include timestamps if needed
+    }
+
 }

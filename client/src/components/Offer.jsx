@@ -30,11 +30,11 @@ function Offer() {
                 </p>
             </div>
             <p className="py-2">
-                <span className="text-xl font-black text-emerald-600 px-2">4000 LKR</span> upwards
+                <span className="text-xl font-black text-[#000066cc] px-2">4000 LKR</span> upwards
             </p>
 
-            <button className="w-full bg-emerald-600 py-3 text-white">Buy Now</button>
-            <p className='mt-3 border-b-2 w-fit border-emerald-500 text text-slate-500'>View Concert Details</p>
+            <button className="w-fit px-8  bg-[#000066] py-3 text-white">Buy Now</button>
+            <p className='mt-3 border-b-2 w-fit border-[#000066] text text-slate-500'>View Concert Details</p>
         </div>
       </div>
     </div>
